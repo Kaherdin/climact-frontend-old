@@ -16,6 +16,7 @@
         "semi": false,
         "tabWidth": 2
       }
-    ]
+    ],
+    "@next/next/no-document-import-in-page": "off"
   }
 }
