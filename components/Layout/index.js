@@ -1,4 +1,4 @@
-import Header from "../sections/header"
+import Header from "../sections/header";
 
 export default function Layout({ children, pageName }) {
   return (
@@ -8,5 +8,5 @@ export default function Layout({ children, pageName }) {
       </div>
       <main>{children}</main>
     </div>
-  )
+  );
 }

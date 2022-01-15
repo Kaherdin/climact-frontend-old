@@ -1,14 +1,16 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBolt, faWind } from "@fortawesome/free-solid-svg-icons"
-import yiLeeAvatar from "../../public/assets/images/yi-lee-avatar.png"
-import abelValionAvatar from "../../public/assets/images/abel-valion-avatar.png"
-import logoDigitalRGB from "../../public/assets/images/EPFL_Logo_Digital_RGB_PROD.png"
-import logoPartnerSwisscom from "../../public/assets/images/Logo-Partner-Swisscom-2017.png"
-import eWebGoalOne from "../../public/assets/images/E-WEB-Goal-01.png"
-import eWebGoalTwo from "../../public/assets/images/E-WEB-Goal-02.png"
-import eWebGoalThree from "../../public/assets/images/E-WEB-Goal-03.png"
-import mountain from "../../public/assets/images/image_468.png"
-import coffee from "../../public/assets/images/coffee.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBolt, faWind } from "@fortawesome/free-solid-svg-icons";
+import yiLeeAvatar from "../../public/assets/images/yi-lee-avatar.png";
+import abelValionAvatar from "../../public/assets/images/abel-valion-avatar.png";
+import logoDigitalRGB from "../../public/assets/images/EPFL_Logo_Digital_RGB_PROD.png";
+import logoPartnerSwisscom from "../../public/assets/images/Logo-Partner-Swisscom-2017.png";
+import eWebGoalOne from "../../public/assets/images/E-WEB-Goal-01.png";
+import eWebGoalTwo from "../../public/assets/images/E-WEB-Goal-02.png";
+import eWebGoalThree from "../../public/assets/images/E-WEB-Goal-03.png";
+import mountain from "../../public/assets/images/image_468.png";
+import coffee from "../../public/assets/images/coffee.png";
+import Image from "next/image";
+
 import {
   Button,
   Card,
@@ -16,31 +18,31 @@ import {
   CardImg,
   CardTitle,
   CardText,
-} from "reactstrap"
+} from "reactstrap";
 
 const cardStyle = {
   width: "22rem",
   marginRight: "2rem",
   borderRadius: "25px",
   border: "0px",
-}
+};
 
 const buttonStyle = {
   borderRadius: "12px",
   padding: "1.25rem 1.75rem",
   fontWeight: "500",
-}
+};
 
 const CardTitleStyle = {
   fontWeight: 700,
   fontSize: "20px",
   paddingTop: "0.25rem",
   paddingBottom: "0.5rem",
-}
+};
 
 const cardBodyStyle = {
   padding: "2rem",
-}
+};
 
 export default function Content() {
   return (
@@ -241,7 +243,11 @@ export default function Content() {
               <div className="col-lg-12 mb-4">
                 <div className="d-flex">
                   <div>
-                    <img src={yiLeeAvatar.src} alt="" className="avatar" />
+                    <Image
+                      src={yiLeeAvatar}
+                      className="avatar"
+                      alt="Yi Lee avatar"
+                    />
                   </div>
                   <div className="d-flex align-items-start flex-column ms-3 justify-content-start">
                     <span>
@@ -254,7 +260,11 @@ export default function Content() {
               <div className="col-lg-12">
                 <div className="d-flex">
                   <div>
-                    <img src={abelValionAvatar.src} alt="" className="avatar" />
+                    <Image
+                      src={abelValionAvatar}
+                      className="avatar"
+                      alt="Abel Valion avatar"
+                    />
                   </div>
                   <div className="d-flex align-items-start flex-column ms-3 justify-content-start">
                     <span>
@@ -271,12 +281,15 @@ export default function Content() {
             <div className="row">
               <div className="col-lg-12">
                 <div>
-                  <img src={logoDigitalRGB.src} alt="" />
+                  <Image src={logoDigitalRGB} alt="Logo digital RGB" />
                 </div>
               </div>
               <div className="col-lg-12">
                 <div>
-                  <img src={logoPartnerSwisscom.src} alt="" />
+                  <Image
+                    src={logoPartnerSwisscom}
+                    alt="Logo partner Swisscom"
+                  />
                 </div>
               </div>
             </div>
@@ -287,9 +300,15 @@ export default function Content() {
             <div className="row">
               <div className="col-lg-12">
                 <div>
-                  <img src={eWebGoalOne.src} className="me-4" />
-                  <img src={eWebGoalTwo.src} className="me-4" />
-                  <img src={eWebGoalThree.src} className="" />
+                  <span className="me-4">
+                    <Image src={eWebGoalOne} />
+                  </span>
+                  <span className="me-4">
+                    <Image src={eWebGoalTwo} />
+                  </span>
+                  <span>
+                    <Image src={eWebGoalThree} />
+                  </span>
                 </div>
               </div>
             </div>
@@ -298,5 +317,5 @@ export default function Content() {
         {/* End Right side */}
       </div>
     </div>
-  )
+  );
 }
