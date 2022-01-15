@@ -1,13 +1,13 @@
-import { Button } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../public/assets/images/logo.png";
+import { Button } from "reactstrap"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
+import logo from "../../public/assets/images/logo.png"
 
 const buttonStyle = {
   padding: "0.5rem 1.25rem",
   borderRadius: "8px",
   outline: "2px",
-};
+}
 
 export default function Header() {
   return (
@@ -43,5 +43,5 @@ export default function Header() {
         </ul>
       </div>
     </div>
-  );
+  )
 }
