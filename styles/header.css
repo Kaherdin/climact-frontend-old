@@ -1,0 +1,7 @@
+:root {
+  --purple: #7C80E9;
+}
+
+.nav-link .active {
+  color:  var(--purple);
+}
