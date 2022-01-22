@@ -1,15 +1,15 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBolt, faWind } from "@fortawesome/free-solid-svg-icons"
-import yiLeeAvatar from "../../public/assets/images/yi-lee-avatar.png"
-import abelValionAvatar from "../../public/assets/images/abel-valion-avatar.png"
-import logoDigitalRGB from "../../public/assets/images/EPFL_Logo_Digital_RGB_PROD.png"
-import logoPartnerSwisscom from "../../public/assets/images/Logo-Partner-Swisscom-2017.png"
-import eWebGoalOne from "../../public/assets/images/E-WEB-Goal-01.png"
-import eWebGoalTwo from "../../public/assets/images/E-WEB-Goal-02.png"
-import eWebGoalThree from "../../public/assets/images/E-WEB-Goal-03.png"
-import mountain from "../../public/assets/images/image_468.png"
-import coffee from "../../public/assets/images/coffee.png"
-import Image from "next/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBolt, faWind } from "@fortawesome/free-solid-svg-icons";
+import yiLeeAvatar from "../../public/assets/images/yi-lee-avatar.png";
+import abelValionAvatar from "../../public/assets/images/abel-valion-avatar.png";
+import logoDigitalRGB from "../../public/assets/images/EPFL_Logo_Digital_RGB_PROD.png";
+import logoPartnerSwisscom from "../../public/assets/images/Logo-Partner-Swisscom-2017.png";
+import eWebGoalOne from "../../public/assets/images/E-WEB-Goal-01.png";
+import eWebGoalTwo from "../../public/assets/images/E-WEB-Goal-02.png";
+import eWebGoalThree from "../../public/assets/images/E-WEB-Goal-03.png";
+import mountain from "../../public/assets/images/image_468.png";
+import coffee from "../../public/assets/images/coffee.png";
+import Image from "next/image";
 
 import {
   Button,
@@ -18,41 +18,41 @@ import {
   CardImg,
   CardTitle,
   CardText,
-} from "reactstrap"
+} from "reactstrap";
 
 const cardStyle = {
   width: "22rem",
   marginRight: "2rem",
   borderRadius: "25px",
   border: "0px",
-}
+};
 
 const buttonStyle = {
   borderRadius: "12px",
   padding: "1.25rem 1.75rem",
   fontWeight: "500",
-}
+};
 
 const CardTitleStyle = {
   fontWeight: 700,
   fontSize: "20px",
   paddingTop: "0.25rem",
   paddingBottom: "0.5rem",
-}
+};
 
 const cardBodyStyle = {
   padding: "2rem",
-}
+};
 
-export default function Content() {
+export default function Content({ project }) {
+  const { attributes } = project;
+  console.log(project);
+  const { projectTitle, subTitle, milestones, members } = attributes;
   return (
     <div className="content__wrapper border-radius-25 px-5 py-4">
-      <h2 className="content__wrapper__title">Act now for change</h2>
+      <h2 className="content__wrapper__title">{projectTitle}</h2>
       <div className="empty-spacing-15"></div>
-      <p className="size-20">
-        A subititle for your landing page describing your product or service
-        that you provide.
-      </p>
+      <p className="size-20">{subTitle}</p>
       <div className="empty-spacing-50"></div>
       <div className="row">
         {/* Left side */}
@@ -126,26 +126,16 @@ export default function Content() {
           <h4 className="block__title">Milestones</h4>
           <div className="block__content d-flex milestones">
             <div className="line"></div>
-            <div>
-              <p className="title">Start</p>
-              <label htmlFor="" className="circle"></label>
-              <p className="date">11.21</p>
-            </div>
-            <div>
-              <p className="title">M1</p>
-              <label htmlFor="" className="circle"></label>
-              <p className="date">03.22</p>
-            </div>
-            <div>
-              <p className="title">M2</p>
-              <label htmlFor="" className="circle"></label>
-              <p className="date">07.22</p>
-            </div>
-            <div>
-              <p className="title">End</p>
-              <label htmlFor="" className="circle"></label>
-              <p className="date">12.22</p>
-            </div>
+            {milestones.data.map((milestone, index) => {
+              const { attributes, id } = milestone;
+              return (
+                <div key={id}>
+                  <p className="title">{attributes.title}</p>
+                  <label htmlFor="" className="circle"></label>
+                  <p className="date">{attributes.number}</p>
+                </div>
+              );
+            })}
           </div>
           {/* End Milestones section */}
 
@@ -240,24 +230,32 @@ export default function Content() {
           <div className="col-lg-12 mb-5">
             <h4 className="block__title">Team behind this project</h4>
             <div className="row">
-              <div className="col-lg-12 mb-4">
-                <div className="d-flex">
-                  <div>
-                    <Image
-                      src={yiLeeAvatar}
-                      className="avatar"
-                      alt="Yi Lee avatar"
-                    />
+              {members.data.map((member) => {
+                const { id, attributes } = member;
+                const { firstName, lastName, affiliation } = attributes;
+                return (
+                  <div className="col-lg-12 mb-4" key={id}>
+                    <div className="d-flex">
+                      <div>
+                        <Image
+                          src={yiLeeAvatar}
+                          className="avatar"
+                          alt={`${firstName} ${lastName} avatar`}
+                        />
+                      </div>
+                      <div className="d-flex align-items-start flex-column ms-3 justify-content-start">
+                        <span>
+                          <b>{`${firstName} ${lastName}`}</b>
+                        </span>
+                        <span className="color-gray-scale-label">
+                          {affiliation}
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="d-flex align-items-start flex-column ms-3 justify-content-start">
-                    <span>
-                      <b>Yi Lee</b>
-                    </span>
-                    <span className="color-gray-scale-label">Affliation</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-12">
+                );
+              })}
+              {/* <div className="col-lg-12">
                 <div className="d-flex">
                   <div>
                     <Image
@@ -273,7 +271,7 @@ export default function Content() {
                     <span className="color-gray-scale-label">Affliation </span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-12 mb-4">
@@ -317,5 +315,5 @@ export default function Content() {
         {/* End Right side */}
       </div>
     </div>
-  )
+  );
 }

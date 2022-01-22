@@ -1,12 +1,12 @@
-import Header from "../sections/header"
+import Header from "../header";
 
 export default function Layout({ children, pageName }) {
   return (
-    <div className="container wrapper p-0">
-      <div className="header-wrapper w-100 p-relative bottom-3 p-relative ">
+    <div className="wrapper p-0">
+      <div className="header-wrapper w-100 p-relative bottom-3">
         <Header />
       </div>
       <main>{children}</main>
     </div>
-  )
+  );
 }

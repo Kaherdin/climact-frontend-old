@@ -3,9 +3,12 @@ module.exports = {
     return [
       {
         source: "/",
-        destination: "/projects",
+        destination: "/home",
         permanent: true,
       },
-    ]
+    ];
   },
-}
+  images: {
+    domains: ["localhost", "i0.wp.com"],
+  },
+};

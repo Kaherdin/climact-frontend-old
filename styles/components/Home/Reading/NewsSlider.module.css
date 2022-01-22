@@ -1,0 +1,67 @@
+.listLine {
+  padding: 0;
+  margin: 0;
+}
+
+.listLine li {
+  width: auto;
+  margin: 0;
+}
+/* 
+.listLine li.slick-active .line {
+  background-color: black;
+} */
+
+.listLine :global(li.slick-active) .line {
+  opacity: .75;
+  background-color: #000
+}
+
+.line {
+  width: 64px;
+  height: 2px;
+  background-color: #d6d6d7;
+}
+
+.slider_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.next {
+  right: 40px
+}
+
+.prev {
+  left: 40px;
+}
+
+.slick_arrow {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  border: 2px solid #eaeaeb;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.slick_arrow:hover {
+  background-color: #fa5925;
+  border-color: #fa5925;
+}
+
+.slick_arrow::before {
+  color: black;
+}
+
+.slick_arrow:hover:before {
+  color: white;
+}
