@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import ImageSlider from "./ImageSlider";
 import TextSlider from "./TextSlider";
 import styles from "@/styles/components/Home/Intro/Intro.module.css";

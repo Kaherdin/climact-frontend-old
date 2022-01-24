@@ -8,7 +8,6 @@ function SampleNextArrow(props) {
   return (
     <div
       className={`${className} ${customClass}`}
-      // style={{ ...style, display: "flex"}}
       onClick={onClick}
     />
   );
@@ -19,8 +18,6 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={`${className} ${customClass}`}
-      // style={{ ...style }}
-      // onClick={onClick}
     />
   );
 }

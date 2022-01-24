@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import styles from "@/styles/components/Home/Reading/Reading.module.css";
 import homeStyle from "@/styles/components/Home/Home.module.css";
 import {
@@ -7,7 +6,6 @@ import {
   Label,
   Input,
   FormFeedback,
-  FormText,
   Button,
 } from "reactstrap";
 import NewsSlider from "./NewsSlider";

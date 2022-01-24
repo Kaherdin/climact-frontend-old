@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,7 +10,6 @@ function SampleNextArrow(props) {
   return (
     <div
       className={`${className} ${customClass}`}
-      // style={{ ...style, display: "flex"}}
       onClick={onClick}
     />
   );
@@ -22,7 +20,6 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={`${className} ${customClass}`}
-      // style={{ ...style }}
       onClick={onClick}
     />
   );

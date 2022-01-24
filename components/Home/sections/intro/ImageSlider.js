@@ -16,11 +16,9 @@ export default function ImageSlider() {
   return (
     <Slider {...settingsImageSlider}>
       <div className={styles.intro_item_img}>
-        {/* <Image src="" width="100%" height="100%" layout="responsive" objectFit="contain" /> */}
         <Image src={tspl} alt="" srcSet="" width={480} height={640} />
       </div>
       <div className={styles.intro_item_img}>
-        {/* <Image src="" width="100%" height="100%" layout="responsive" objectFit="contain" /> */}
         <Image
           src={testimonial_img}
           alt=""

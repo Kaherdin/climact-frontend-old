@@ -6,7 +6,7 @@ export default function Member({ member }) {
   const { url } = avatar.data.attributes;
   return (
     <div className="col-lg-12 mb-4">
-      <Link href={link}>
+      <Link href={link} passHref>
         <div className="d-flex" role="button">
           <div>
             <Image

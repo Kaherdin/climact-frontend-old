@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "@/styles/components/Home/TopSection/TopMark.module.css";
 import TopMarkIcon from "components/Shared/Icon/TopMark";
 import lottie from "lottie-web";

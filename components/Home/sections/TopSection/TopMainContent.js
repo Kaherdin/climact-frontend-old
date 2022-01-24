@@ -1,14 +1,5 @@
 import styles from "@/styles/components/Home/TopSection/TopMainContent.module.css";
 import ArrowDown from "@/components/Shared/Icon/ArrowDown";
-import Image from "next/image";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardImg,
-  CardTitle,
-  CardText,
-} from "reactstrap";
 
 export default function Content() {
   return (

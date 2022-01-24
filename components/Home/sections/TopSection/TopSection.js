@@ -1,23 +1,9 @@
 import styles from "@/styles/components/Home/TopSection/TopSection.module.css";
 import TopMainContent from "./TopMainContent";
 import GoogleCop from "./GoogleCop";
-import Image from "next/image";
 import TopMark from "./TopMark";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardImg,
-  CardTitle,
-  CardText,
-} from "reactstrap";
 
 export default function Content() {
-  // const renderTopMark = (data) => {
-  //   return data.map((mark) => {
-  //     return;
-  //   });
-  // };
   return (
     <>
       <TopMainContent></TopMainContent>

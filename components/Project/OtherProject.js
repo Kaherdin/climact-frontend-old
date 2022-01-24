@@ -54,7 +54,7 @@ export default function OtherProject({ project, id }) {
       <CardBody style={cardBodyStyle}>
         <CardTitle style={CardTitleStyle}>{projectTitle}</CardTitle>
         <CardText>{subTitle}</CardText>
-        <Link href={`/projects/${id}`}>
+        <Link href={`/projects/${id}`} passHref>
           <Button color="primary" href="#pablo" style={buttonStyle}>
             Discover
           </Button>

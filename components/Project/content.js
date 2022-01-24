@@ -1,34 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBolt, faWind } from "@fortawesome/free-solid-svg-icons";
-import yiLeeAvatar from "../../public/assets/images/yi-lee-avatar.png";
-import abelValionAvatar from "../../public/assets/images/abel-valion-avatar.png";
-import logoDigitalRGB from "../../public/assets/images/EPFL_Logo_Digital_RGB_PROD.png";
-import logoPartnerSwisscom from "../../public/assets/images/Logo-Partner-Swisscom-2017.png";
-import eWebGoalOne from "../../public/assets/images/E-WEB-Goal-01.png";
-import eWebGoalTwo from "../../public/assets/images/E-WEB-Goal-02.png";
-import eWebGoalThree from "../../public/assets/images/E-WEB-Goal-03.png";
-import mountain from "../../public/assets/images/image_468.png";
-import coffee from "../../public/assets/images/coffee.png";
 import Image from "next/image";
 import Member from "./Member";
 import Partner from "./Partner";
 import Sdg from "./Sdg";
 import OtherProject from "./OtherProject";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardImg,
-  CardTitle,
-  CardText,
-} from "reactstrap";
-
-const cardStyle = {
-  width: "22rem",
-  marginRight: "2rem",
-  borderRadius: "25px",
-  border: "0px",
-};
 
 const buttonStyle = {
   borderRadius: "12px",
