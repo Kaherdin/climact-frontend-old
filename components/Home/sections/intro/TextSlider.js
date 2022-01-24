@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,7 +20,7 @@ function SamplePrevArrow(props) {
     <div
       className={`${className} ${customClass}`}
       // style={{ ...style }}
-      onClick={onClick}
+      // onClick={onClick}
     />
   );
 }

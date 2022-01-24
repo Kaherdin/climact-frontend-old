@@ -1,5 +1,6 @@
 import styles from "@/styles/components/Home/Podcast/Podcast.module.css";
-
+import Image from "next/image";
+import podcastImage from "../../../../public/assets/images/Home/podcast_img.jpeg";
 export default function PodCast() {
   return (
     <section className={styles.podcast_section}>
@@ -22,11 +23,14 @@ export default function PodCast() {
               </div>
             </div>
             <div className={styles.podcast_img_wrapper}>
-              {/* <img
-                className={styles.podcast_img}
-                src="https://i0.wp.com/climate.ai/wp-content/uploads/2020/02/podcast_img.jpg?fit=720%2C720&ssl=1"
-                alt=""
-              /> */}
+              <div className={styles.podcast_img}>
+                <Image
+                  src={podcastImage.src}
+                  alt="fdsaf"
+                  width={360}
+                  height={360}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -36,6 +36,7 @@
     "react-markdown": "^6.0.2",
     "react-slick": "^0.28.1",
     "reactstrap": "^9.0.1",
+    "slick-carousel": "^1.8.1",
     "tailwindcss": "^2.2.6",
     "yup": "^0.32.8"
   },

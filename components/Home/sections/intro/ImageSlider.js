@@ -3,7 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import styles from "@/styles/components/Home/Intro/Intro.module.css";
-
+import testimonial_img from "../../../../public/assets/images/Home/testimonial_img.jpeg";
+import tspl from "../../../../public/assets/images/Home/tspl@2x-2.png";
 export default function ImageSlider() {
   const settingsImageSlider = {
     dots: false,
@@ -16,18 +17,16 @@ export default function ImageSlider() {
     <Slider {...settingsImageSlider}>
       <div className={styles.intro_item_img}>
         {/* <Image src="" width="100%" height="100%" layout="responsive" objectFit="contain" /> */}
-        <img
-          src="https://i0.wp.com/climate.ai/wp-content/uploads/2020/03/tspl@2x-2.png?resize=480%2C640&ssl=1"
-          alt=""
-          srcSet=""
-        />
+        <Image src={tspl} alt="" srcSet="" width={480} height={640} />
       </div>
       <div className={styles.intro_item_img}>
         {/* <Image src="" width="100%" height="100%" layout="responsive" objectFit="contain" /> */}
-        <img
-          src="https://i0.wp.com/climate.ai/wp-content/uploads/2020/02/testimonial_img.jpg?resize=480%2C640&ssl=1"
+        <Image
+          src={testimonial_img}
           alt=""
           srcSet=""
+          width={480}
+          height={640}
         />
       </div>
     </Slider>
