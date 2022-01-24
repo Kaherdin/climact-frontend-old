@@ -5,21 +5,12 @@ import styles from "@/styles/components/Home/Intro/Intro.module.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick, customClass } = props;
-  return (
-    <div
-      className={`${className} ${customClass}`}
-      onClick={onClick}
-    />
-  );
+  return <div className={`${className} ${customClass}`} onClick={onClick} />;
 }
 
 function SamplePrevArrow(props) {
   const { className, style, onClick, customClass } = props;
-  return (
-    <div
-      className={`${className} ${customClass}`}
-    />
-  );
+  return <div className={`${className} ${customClass}`} />;
 }
 
 export default function TextSlider(props) {
