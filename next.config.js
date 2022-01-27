@@ -9,6 +9,6 @@ module.exports = {
     ];
   },
   images: {
-    domains: ["localhost", "i0.wp.com"],
+    domains: ["localhost", "i0.wp.com", "climate.ai"],
   },
 };

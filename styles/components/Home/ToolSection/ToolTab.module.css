@@ -1,0 +1,73 @@
+.tools_tabs_wrap {
+  position: relative;
+}
+.tools_tabs_wrap p {
+  margin-bottom: 0;
+}
+.tools_tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f3;
+  list-style-type: none;
+}
+.tools_tabs li {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 16px 27px;
+  margin: 0 16px;
+}
+.tools_tabs li {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 16px 27px;
+  margin: 0 16px;
+}
+.tools_tab_name {
+  color: #6e6e78;
+  font: 500 16px/21px "GT Eesti Pro Display", sans-serif;
+  letter-spacing: -0.06px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tools_tab_period {
+  color: #6e6e78;
+  font: 300 14px/21px "GT Eesti Pro Display", sans-serif;
+  letter-spacing: -0.07px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tools_tabs li.current .tools_tab_name {
+  color: #070707;
+}
+.tools_tabs li.current .tools_tab_period {
+  color: #070707;
+}
+.tools_tabs li.current:after {
+  opacity: 1;
+  visibility: visible;
+}
+.tools_tabs li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #fa5925;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}

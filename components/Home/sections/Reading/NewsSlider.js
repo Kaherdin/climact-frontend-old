@@ -16,14 +16,6 @@ function SamplePrevArrow(props) {
 }
 
 export default function NewsSlider() {
-  useEffect(() => {
-    const slide = document.getElementsByClassName("slick-list")[0];
-    console.log(slide);
-    if (slide) {
-      slide.style.setProperty("padding", "0px 15%");
-    }
-  }, []);
-
   const settings = {
     dots: true,
     infinite: true,

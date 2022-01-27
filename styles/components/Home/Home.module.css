@@ -1,3 +1,9 @@
+.home {
+  font-family: "GT Eesti Pro Display", sans-serif;
+  letter-spacing: -0.7px;
+  background-color: #f1f1f3;
+}
+
 .top_section {
   background-image: url("../../../public/assets/images/Home/sacramento.png");
   display: -webkit-flex;
@@ -21,3 +27,22 @@
   opacity: 0.4;
 }
 
+.description_block {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text_block {
+  color: #545456;
+  font: 300 19px/28px "GT Eesti Pro Display", sans-serif;
+}
+
+.description_block .title_block {
+  margin-bottom: 26px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}

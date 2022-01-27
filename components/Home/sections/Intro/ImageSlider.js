@@ -1,30 +1,53 @@
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import styles from "@/styles/components/Home/Intro/Intro.module.css";
-import testimonial_img from "../../../../public/assets/images/Home/testimonial_img.jpeg";
-import tspl from "../../../../public/assets/images/Home/tspl@2x-2.png";
-export default function ImageSlider() {
+
+export default function ImageSlider(props) {
+  const { activeIndex, changeActiveIndex } = props;
+  const [slider, setSlider] = useState(null);
+
+  const changeIndex = (index) => {
+    changeActiveIndex(index);
+  };
+
+  useEffect(() => {
+    if (slider) {
+      slider.slickGoTo(activeIndex);
+    }
+  }, [activeIndex, slider]);
+
   const settingsImageSlider = {
     dots: false,
     infinite: true,
     slidesToShow: 1,
     arrows: false,
+    beforeChange: (currentIndex, activeIndex) => {
+      changeIndex(activeIndex);
+    },
   };
 
   return (
-    <Slider {...settingsImageSlider}>
+    <Slider ref={(slider) => setSlider(slider)} {...settingsImageSlider}>
       <div className={styles.intro_item_img}>
-        <Image src={tspl} alt="" srcSet="" width={480} height={640} />
+        <Image
+          src="https://i0.wp.com/climate.ai/wp-content/uploads/2020/03/tspl@2x-2.png?resize=480%2C640&ssl=1"
+          layout="fill"
+          alt="Intro image"
+        />
       </div>
       <div className={styles.intro_item_img}>
         <Image
-          src={testimonial_img}
-          alt=""
-          srcSet=""
-          width={480}
-          height={640}
+          src="https://i0.wp.com/climate.ai/wp-content/uploads/2020/02/testimonial_img.jpg?resize=480%2C640&ssl=1"
+          layout="fill"
+          alt="Intro image"
+        />
+      </div>
+      <div className={styles.intro_item_img}>
+        <Image
+          src="https://i0.wp.com/climate.ai/wp-content/uploads/2020/03/Ashby-Head.jpg?resize=480%2C640&ssl=1"
+          layout="fill"
+          alt="Intro image"
         />
       </div>
     </Slider>

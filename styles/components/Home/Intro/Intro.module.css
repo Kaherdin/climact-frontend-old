@@ -114,3 +114,8 @@
 .slick_arrow::before {
   color: black;
 }
+
+.intro_item_img {
+  width: 480px;
+  height: 640px;
+}

@@ -13,8 +13,6 @@ const buttonStyle = {
 
 export default function Header() {
   const router = useRouter();
-  console.log(router);
-
   return (
     <div className="d-flex absolute justify-content-between align-items-center pb-2 pt-4 px-5 w-100">
       <span className="logo-image" style={{ width: "173px", height: "auto" }}>
