@@ -36,7 +36,6 @@ export default function Content({ project, otherProject }) {
     coverPhoto,
     challenge,
   } = attributes;
-  console.log(otherProject);
   const { url: coverPhotoUrl } = coverPhoto.data.attributes;
   return (
     <>
