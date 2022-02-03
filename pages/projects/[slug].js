@@ -52,6 +52,5 @@ export const getServerSideProps = async ({ query: { slug }, req }) => {
   const { data: otherProject } = await fetchAxiosAPI(
     `/projects/?${otherProjectQuery}`
   );
-  console.log(otherProject);
   return { props: { project: project, otherProject: otherProject } };
 };
