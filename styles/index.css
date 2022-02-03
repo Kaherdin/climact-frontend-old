@@ -1,12 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --primary: #7c80e9 !important;
+}
 
 html {
   font-size: 13px;
   @apply text-gray-900;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 @media screen and (min-width: 640px) {
   html {
     font-size: 14px;
@@ -23,12 +38,12 @@ html {
   @apply text-blue-600 underline;
 }
 
-.rich-text-banner {
+/* .rich-text-banner {
   @apply whitespace-pre-line;
   a {
     @apply underline;
   }
-}
+} */
 
 .title {
   @apply text-4xl leading-snug font-semibold;
@@ -40,6 +55,56 @@ html {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.border-radius-25 {
+  border-radius: 25px;
+}
+
+.size-18 {
+  font-size: 18px;
+}
+
+.size-20 {
+  font-size: 20px;
+}
+
+.size-24 {
+  font-size: 24px;
+}
+
+.empty-spacing-15 {
+  height: 15px;
+}
+
+.empty-spacing-60 {
+  height: 60px;
+}
+
+.empty-spacing-50 {
+  height: 50px;
+}
+
+.empty-spacing-40 {
+  height: 40px;
+}
+
+.empty-spacing-30 {
+  height: 30px;
+}
+
+.empty-spacing-10 {
+  height: 10px;
+}
+
 .with-arrow:after {
   background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1%206a.5.5%200%200%200%200%201V6zM12.854.646a.5.5%200%200%200-.708.708l.708-.708zM18%206.5l.354.354a.5.5%200%200%200%200-.708L18%206.5zm-5.854%205.146a.5.5%200%200%200%20.708.708l-.708-.708zM1%207h16.5V6H1v1zm16.646-.854l-5.5%205.5.708.708%205.5-5.5-.708-.708zm-5.5-4.792l2.75%202.75.708-.708-2.75-2.75-.708.708zm2.75%202.75l2.75%202.75.708-.708-2.75-2.75-.708.708z%22%20fill%3D%22%231264A3%22%2F%3E%3C%2Fsvg%3E);
   content: "";
@@ -47,4 +112,213 @@ html {
   height: 13px;
   display: inline-block;
   margin-left: 0.5em;
+}
+
+.header-wrapper {
+  position: fixed;
+  z-index: 10000;
+}
+.top-image-wrapper {
+  /* background-image: url("../public/assets/images/project-modelling-platform-1.png"); */
+  border-radius: 25px;
+  height: 676px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+  top: -10px;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.content__wrapper {
+  width: calc(100% - 124px);
+  margin: auto;
+  position: relative;
+  top: -10rem;
+  background-color: #fcfcfc;
+}
+
+.content__wrapper__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.block__title {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.block__content {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.icon-wrapper {
+  width: 10%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text-wrapper {
+  width: 90%;
+}
+
+.milestones {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.milestones .title,
+.milestones .date {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.milestones .title {
+  margin-bottom: 12px;
+}
+
+.milestones .date {
+  margin-bottom: 0px;
+  color: #a0a3bd;
+}
+
+.milestones .circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #cdcff5;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.line::after {
+  content: "";
+  border: 2px solid #cdcff5;
+  width: 100%;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.color-gray-scale-label {
+  color: #6e7191;
+}
+
+.ref > li > a {
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.ref > li {
+  list-style-type: none;
+}
+
+.ref {
+  padding: 0px;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+
+  border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.nav-link {
+  color: #4e4b66;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #7c80e9;
+  border-color: #666be5;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #5056e2;
+  border-color: #1d23af;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5056e2;
+  border-color: #3238dd;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #5056e2;
+  background-image: none;
+  border-color: #3238dd;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background-color: #3238dd;
+  border-color: #1d23af;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background-color: #7c80e9;
+  border-color: #666be5;
+}
+.btn-primary .badge {
+  color: #7c80e9;
+  background-color: #fff;
+}
+
+.nav .nav-item .nav-link {
+  font-weight: 500;
+}
+
+.nav .nav-item .nav-link.active {
+  color: var(--primary);
 }
