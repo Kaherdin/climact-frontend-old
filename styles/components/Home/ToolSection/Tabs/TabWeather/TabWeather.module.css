@@ -1,0 +1,31 @@
+.tool_container_description {
+  text-align: center;
+  padding: 0 80px;
+}
+@media screen and (max-width: 480px) {
+  .tool_container_description {
+    padding: 0 40px;
+  }
+}
+.tool_container_title {
+  color: #fff;
+  font: 500 30px/32px "GT Eesti Pro Display", sans-serif;
+  letter-spacing: -0.2px;
+  margin-bottom: 13px;
+}
+@media screen and (max-width: 767px) {
+  .tool_container_title {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tool_container_title br {
+    display: none;
+  }
+}
+.tool_container_text {
+  color: rgba(255, 255, 255, 0.6);
+  font: 300 18px/24px "GT Eesti Pro Display", sans-serif;
+}

@@ -1,6 +1,14 @@
 module.exports = {
-  i18n: {
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      },
+    ];
   },
-}
+  images: {
+    domains: ["localhost", "i0.wp.com", "climate.ai"],
+  },
+};

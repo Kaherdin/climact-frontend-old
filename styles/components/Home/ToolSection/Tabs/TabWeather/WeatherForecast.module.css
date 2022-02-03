@@ -1,0 +1,65 @@
+.weather_wrap {
+  padding: 9px 0 24px;
+}
+.weather_bottom {
+  margin-top: -20px;
+  max-width: 640px;
+}
+.weather_bottom_title {
+  color: #fff;
+  font: 500 16px/24px "GT Eesti Pro Display", sans-serif;
+}
+.weather_bottom_text p {
+  color: rgba(255, 255, 255, 0.6);
+  font: 300 16px/24px "GT Eesti Pro Display", sans-serif;
+}
+.weather_inner {
+  position: relative;
+  overflow: hidden;
+}
+.weather_illustration {
+  padding: 48px 0;
+}
+.weather_item {
+  min-width: 108px;
+  width: 108px;
+  padding: 0 20px 0 0;
+  margin-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.weather_item img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+.weather_box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 344px;
+  padding: 48px 48px 43px;
+  box-shadow: 0 2px 17px 17px rgb(38 38 43 / 50%);
+  background-color: #353539;
+  transition: all 1s;
+}
+.weather_box p {
+  position: relative;
+  color: #fff;
+  font: 500 22px/25px "GT Eesti Pro Display", sans-serif;
+  letter-spacing: -0.1px;
+  padding-top: 20px;
+}
+.weather_box p:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 4px;
+  background-color: #515155;
+}

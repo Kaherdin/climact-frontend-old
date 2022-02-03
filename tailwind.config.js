@@ -1,4 +1,4 @@
-const { colors } = require(`tailwindcss/defaultTheme`)
+const { colors } = require(`tailwindcss/defaultTheme`);
 
 module.exports = {
   mode: "jit", // see https://tailwindcss.com/docs/just-in-time-mode
@@ -28,4 +28,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require("@tailwindcss/typography")],
-}
+};

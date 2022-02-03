@@ -1,0 +1,61 @@
+.reading_section {
+  padding: 159px 0;
+  background: #f1f1f3;
+}
+
+.subscribe_block {
+  max-width: 480px;
+  margin: 0 auto 120px;
+}
+
+.subscribe_text {
+  text-align: center;
+  color: #070707;
+  font: 500 18px/32px "GT Eesti Pro Display", sans-serif;
+  letter-spacing: -0.1px;
+  margin-bottom: 14px;
+}
+
+.description_block {
+  margin-bottom: 77px;
+}
+
+.subscribe_form {
+  padding: 20px 25px;
+  display: block;
+  position: relative;
+  text-align: left;
+  border: 1px solid #dbdbdc;
+  border-radius: 28px;
+  background-color: #fff;
+}
+
+.subscribe_button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #fa5925;
+  border-radius: 28px;
+  border: none;
+  padding: 20px 36px 18px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font: 500 16px "GT Eesti Pro Display",sans-serif;
+  white-space: nowrap;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  width: auto;
+}
+
+.subscribe_button::hover {
+  background-color: #fb6e41;
+  color: #fff;
+}
+
+.title_block {
+  font-size: calc(1.325rem + .9vw);
+}

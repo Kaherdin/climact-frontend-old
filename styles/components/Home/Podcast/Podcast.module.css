@@ -1,0 +1,69 @@
+.podcast_section {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  padding: 0 40px;
+}
+
+.podcast_inner {
+  padding: 80px 0;
+  background: #26262b
+    url(//climate.ai/wp-content/themes/climateai/images/texture_left.svg)
+    no-repeat left bottom;
+}
+
+.podcast_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.podcast_info {
+  padding-right: 121px;
+}
+
+.podcast_info_title {
+  color: #fff;
+  font: 48px/56px "GT Eesti Pro Display", sans-serif;
+  letter-spacing: -0.4px;
+  margin-bottom: 9px;
+}
+
+.podcast_info_text {
+  color: rgba(255, 255, 255, 0.6);
+  font: 300 21px/32px "GT Eesti Pro Display", sans-serif;
+  margin-bottom: 46px;
+}
+
+.btn_listen {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  padding: 19px 36px 17px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fa5925;
+  color: #fff;
+  font: 500 16px "GT Eesti Pro Display", sans-serif;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.podcast_img_wrapper {
+  width: 360px;
+  min-width: 360px;
+}
+
+.podcast_img {
+  position: relative;
+  border: none;
+  vertical-align: top;
+}
+
+.podcast_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
