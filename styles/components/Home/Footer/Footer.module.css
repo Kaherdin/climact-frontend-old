@@ -1,0 +1,142 @@
+.footer {
+  position: relative;
+  background: #26262b;
+}
+
+.footer_info {
+  position: relative;
+  z-index: 2;
+  padding: 177px 0 175px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer_info_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_info_left {
+  max-width: 707px;
+  padding-right: 24px;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  padding: 19px 36px 17px;
+  text-align: center;
+  text-decoration: none;
+  color: #070707;
+  font: 500 16px "GT Eesti Pro Display",sans-serif;
+  white-space: nowrap;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer_main {
+  position: relative;
+  z-index: 2;
+  background: #26262b;
+  padding: 80px 0 64px;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+
+
+.footer_main_inner {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.footer_main_logo {
+  display: inline-block;
+}
+
+.footer_main_logo img {
+  border: none;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer_info_left p {
+  color: #fff;
+  font: 48px/56px "GT Eesti Pro Display",sans-serif;
+  letter-spacing: -.4px;
+}
+
+.footer_main_nav {
+  margin-bottom: -14px;
+}
+
+.footer_main_nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font: 500 16px/1 "GT Eesti Pro Display",sans-serif;
+  margin-right: 40px;
+  margin-bottom: 14px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer_main_nav a.current-menu-item, .footer_main_nav a.current-post-ancestor, .footer_main_nav a.current-page-ancestor, .footer_main_na a.current-menu-parent {
+  opacity: .7 !important;
+}
+
+.footer_main_bottom {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.footer_main_cop {
+  margin: 0px;
+  margin-right: 24px;
+  color: rgba(255,255,255,.3);
+  font: 13px/24px "GT Eesti Pro Display",sans-serif;
+}
+
+.footer_main_links a {
+  text-decoration: none;
+  color: rgba(255,255,255,.3);
+  font: 13px/24px "GT Eesti Pro Display",sans-serif;
+  margin-right: 24px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 37px;
+  right: 0;
+  z-index: 1;
+  display: block;
+  width: 740px;
+  height: calc(100% - 37px);
+  background: url(https://climate.ai/wp-content/themes/climateai/images/bottom_texture.svg) no-repeat right top/auto 100%;
+}
